@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const MemberBanner = () => {
   return (
@@ -10,7 +11,7 @@ const MemberBanner = () => {
       <div  className='text-center text-sm mx-4'>
       <h1>No matter what you feel like doing today,</h1>
       <h1>It’s better as a Member.</h1>
-      <button className='hover:border-black border-b-[1px]'>Join Us</button>
+      <Link to={'/Member-login'}><button className='hover:border-black border-b-[1px]'>Join Us</button></Link>
       </div>
     </div>
   )

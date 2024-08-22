@@ -13,7 +13,7 @@ const Checkout = () => {
     </center>
     <div className='flex justify-center '>
     <Form></Form>
-    <div className='min-w-60 ml-5'>
+    <div className='max-w-80 ml-5'>
     <SummaryCalculation></SummaryCalculation>
     <h1 className='my-5 font-semibold text-3xl'>Bag Summary</h1>
     {
