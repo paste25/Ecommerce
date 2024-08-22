@@ -23,27 +23,25 @@ const ProductCarousel = ({newProductsList}) => {
       items: 4
     },
     laptop: {
-      breakpoint: { max: 1650, min: 464 },
+      breakpoint: { max: 1650, min: 1024 },
       items: 3
     },
     tablet: {
-      breakpoint: { max: 1300, min: 464 },
-      items: 3
+      breakpoint: { max: 1024, min: 600 },
+      items: 2
     },
     mobile: {
-      breakpoint: { max: 464, min: 0 },
+      breakpoint: { max: 600, min: 0 },
       items: 1
     }
   };
 
   return (
-    <>
-    
-    <Carousel responsive={responsive} arrows={false} renderButtonGroupOutside={true} customButtonGroup={<ButtonGroup />} className='
-    2xl:pl-9 xl:pl-9 lg:pl-9'>
+    <div className='w-full'>
+    <Carousel responsive={responsive} arrows={false} renderButtonGroupOutside={true} customButtonGroup={<ButtonGroup />}>
       {FilteredProducts.map((value, index)=><SingleItem item={value} key={index}></SingleItem>)}
     </Carousel>
-    </>
+    </div>
   )
 }
 

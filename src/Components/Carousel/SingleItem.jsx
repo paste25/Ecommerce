@@ -5,8 +5,8 @@ const SingleItem = ({ item }) => {
 const {handleLinkClick}=useContext(products)
 
   return (
-    <div className='font-semibold'>
-      <div className='2xl:w-[400px] 2xl:h-[400px] xl:w-[350px] xl:h-[350px] lg:w-[300px] lg:h-[300px] overflow-hidden'>
+    <div className='font-semibold w-full h-full flex justify-center flex-col px-5'>
+      <div className='h-full w-full overflow-hidden '>
         <Link to={`/product/${item.id}`} onClick={handleLinkClick}><img src={item.img[0]} alt="" className='w-full h-full object-cover' /></Link>
       </div>
       <h1>{item.name}</h1>

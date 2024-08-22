@@ -6,7 +6,7 @@ const Category = ({item, btn}) => {
 
   const {handleLinkClick}=useContext(products)
   return (
-    <div className=" lg:w-full lg:h-full sm:mx-5 relative sm:w-[450px] sm:my-5 lg:my-0 w-[330px] ">
+    <div className=" lg:w-full lg:h-full sm:mx-5 relative sm:w-[450px] sm:my-5 lg:my-0 w-[330px] mt-4">
       <Link to={item.link} onClick={handleLinkClick}>
       <div className="">
       <img src={item.img} alt="" className="lg:w-full h-2/4 rounded-md"/>

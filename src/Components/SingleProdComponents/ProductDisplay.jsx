@@ -12,6 +12,7 @@ const ProductDisplay = ({ singleProduct }) => {
       <Productdesc singleProduct={singleProduct}></Productdesc>
     </div>
     <h1 className='font-semibold text-4xl ml-9 mb-6 mt-20'>You Might Also Like</h1>
+    <ProductCarouselMemo />
     </>
   )
 }

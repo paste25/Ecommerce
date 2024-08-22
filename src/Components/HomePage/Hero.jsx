@@ -42,9 +42,7 @@ function Header() {
         </div>
       <div className='text-[#4b4b4b] mt-12 font-medium'>
         <h1 className='2xl:text-7xl lg:text-6xl md:text-5xl sm:text-4xl lg:ml-20 opacity-25 sm:my-10 ml-5 text-2xl my-5'>Promotions</h1>
-        <div className=''>
-        <ProductCarousel newProductsList={newProductsList}></ProductCarousel>
-        </div>
+        <ProductCarousel newProductsList={newProductsList}></ProductCarousel>  
         <h1 className='sm:text-4xl text-3xl lg:ml-10 my-5 text-center lg:text-left'>Members Exclusive</h1>
         <div className='lg:flex mt-4 items-center grid justify-center'>
         {
